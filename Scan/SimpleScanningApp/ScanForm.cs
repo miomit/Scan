@@ -184,7 +184,7 @@ namespace SimpleScanningApp
             PdfDocument document = new PdfDocument();
             document.Info.Title = "Created using PDFsharp";
 
-            for (int i = 1; i < DocumentCount; i++)
+            for (int i = 1; i <= DocumentCount; i++)
             {
                 string fileSpec = SRC + i + ".jpg";
                 PdfPage page = document.AddPage();
