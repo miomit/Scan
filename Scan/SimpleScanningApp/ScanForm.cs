@@ -55,7 +55,7 @@ namespace SimpleScanningApp
                 //this.Text = (Interval.Value - ScanTime).ToString();
                 this.BeginInvoke(new MethodInvoker(() => this.Text = (Interval.Value - ScanTime).ToString()));
 
-                if (ScanTime == 16)
+                if (ScanTime == 15)
                 {
                     ScanTime = 0;
                     this.BeginInvoke(new MethodInvoker(() => this.Text = "Scaning start"));
